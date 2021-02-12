@@ -20,5 +20,5 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='test_butecos')),
-    path('',include('crud.urls')),
+    path('', include('crud.urls')),
 ]

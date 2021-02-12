@@ -1,18 +1,22 @@
 from django.contrib import admin
+
 from .models import Team, Sport, Product, Customer
 
 
 class TeamAdmin(admin.ModelAdmin):
     list_display = ['name', 'description']
 
+
 class SportAdmin(admin.ModelAdmin):
     list_display = ['name', 'description']
 
+
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'description','price']
+    list_display = ['name', 'description', 'price']
+
 
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ['name', 'num_doc','phone']   
+    list_display = ['name', 'num_doc', 'phone']
 
 
 admin.site.register(Team, TeamAdmin)
